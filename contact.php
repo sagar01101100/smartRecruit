@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="en">
 <?php 
@@ -10,7 +13,7 @@ include 'constants/check-login.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Nightingale Jobs - Contact Us</title>
+	<title>Contact Us</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -23,7 +26,7 @@ include 'constants/check-login.php';
     <meta property="og:image:alt" content="Nightingale Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/iitp_logo.png">
+	<link rel="shortcut icon" href="images/ico/iitp_logo.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -52,60 +55,59 @@ include 'constants/check-login.php';
 	<div class="container-wrapper">
 
 		<header id="header">
-		<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
+			<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
 
-<div class="container">
-	
-	<div class="logo-wrapper">
-		<div class="logo">
-			<a href="./"><img width ="50rem" src="images/iitp_logo.png" alt="Logo" /></a>
-		</div>
-	</div>
-	
-	<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
-	
-		<ul class="nav navbar-nav" id="responsive-menu">
-			
-			<li>
-				<a href="job-list.php">Apply Now</a>
+				<div class="container">
+					
+					<div class="logo-wrapper">
+						<div class="logo">
+							<a href="./"><img width="50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
+						</div>
+					</div>
+					
+					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+					
+						<ul class="nav navbar-nav" id="responsive-menu">
+						<li>
+								<a href="job-list.php">Apply Now</a>
 
-			</li>
-			
-			<li>
-				<a href="employers.php">IITP Faculties</a>
-			</li>
-			
-			<li>
-				<a href="contact.php">Contact Us</a>
-			</li>
+							</li>
+							
+							<li>
+								<a href="employers.php">IITP Faculties</a>
+							</li>
+							
+							<li>
+								<a href="contact.php">Contact Us</a>
+							</li>
 
-		</ul>
+						</ul>
+				
+					</div>
 
-	</div>
+					<div class="nav-mini-wrapper">
+						<ul class="nav-mini sign-in">
+						<?php
+						if ($user_online == true) {
+						print '
+						    <li><a href="logout.php">logout</a></li>
+							<li><a href="'.$myrole.'">Profile</a></li>';
+						}else{
+						print '
+							<li><a href="login.php">login</a></li>
+							<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
+						}
+						
+						?>
 
-	<div class="nav-mini-wrapper">
-		<ul class="nav-mini sign-in">
-		<?php
-		if ($user_online == true) {
-		print '
-			<li><a href="logout.php">logout</a></li>
-			<li><a href="'.$myrole.'">Profile</a></li>';
-		}else{
-		print '
-			<li><a href="login.php">login</a></li>
-			<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
-		}
-		
-		?>
-
-		</ul>
-	</div>
-
-</div>
-
-<div id="slicknav-mobile"></div>
-
-</nav>
+						</ul>
+					</div>
+				
+				</div>
+				
+				<div id="slicknav-mobile"></div>
+				
+			</nav>
 
 			<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
 			
@@ -119,10 +121,10 @@ include 'constants/check-login.php';
 					<div class="row gap-20">
 					
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Employer</a>
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Employee</a>
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
 						</div>
 
 					</div>
@@ -227,22 +229,22 @@ include 'constants/check-login.php';
 							<ul class="address-list">
 								<li>
 										<h5>Address</h5>
-										<address> Takoradi, <br/> PO.BOX AX40, <br/>School Junction</address>
+										<address> Bihta Kanpa Road, <br/> Dayalpur Daulatpur, <br/>Patna, Bihar 801106.</address>
 								</li>
 								<li>
-										<h5>Email</h5><a href="mailto:nightingale.nath2@gmail.com">nightingale.nath2@gmail.com</a>
+										<h5>Email</h5><a href="mailto:iitpatna@gmail.com">iitpatna@gmail.com</a>
 								</li>
 								<li>
-										<h5>Phone Number</h5><a href="tel:+233 546 607 474">+233 546 607 474</a>
+										<h5>Phone Number</h5><a href="tel:+91 899592XXXX">+91 899592XXXX</a>
 								</li>
 
 								<li>
 										<h5>Social Networks</h5>
 										<div class="contact-social">
 										
-											<a href="<?php echo "$fb"; ?>" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-											<a href="<?php echo "$tw"; ?>" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-											<a href="<?php echo "$ig"; ?>" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+											<a href="https://www.facebook.com/iitp.ac.in/" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+											<a href="https://twitter.com/IITPAT" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+											<a href="https://www.instagram.com/iit_patna_official/?hl=en" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
 										
 										</div>
 								</li>
