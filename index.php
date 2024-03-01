@@ -78,7 +78,7 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img width ="50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
+							<a href="./"><img width ="50rem" src="images/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -163,7 +163,7 @@ include 'constants/check-login.php';
 		<div class="main-wrapper" >
 
 		  
-			<div class="hero" style="background-image: url('images/iitp.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;" >
+			<div class="hero" style="background-image: url('images/iitp_campus.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;" >
 				<div class="container">
 
 					<h1>your bright future starts here now</h1>
