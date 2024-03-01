@@ -66,7 +66,7 @@ include 'constants/check-login.php';
 <body class="home">
 
 
-	<div id="introLoader" class="introLoading"></div>
+ <div id="introLoader" class="introLoading"></div>
 
 	<div class="container-wrapper">
 
