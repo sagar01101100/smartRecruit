@@ -66,7 +66,9 @@
 </div>
 
 <div class="modal-footer text-center">
-<button  onclick="return val();" type="submit" name="reg_mode" class="btn btn-primary">Register</button>
+<button  onclick="return val()  ;" type="submit" name="reg_mode" class="btn btn-primary">Register</button>
+
+
 </div>
 										
 </div>

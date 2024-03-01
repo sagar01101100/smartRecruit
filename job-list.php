@@ -196,7 +196,7 @@ $title = "Job List";
 								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-5">
 									<div class="form-group form-lg">
 										<select class="form-control" name="category" required/>
-										<option value="">-Select category-</option>
+										<option value="">-Select Department-</option>
 										 <?php
 										 require 'constants/db_config.php';
 										 try {
@@ -232,7 +232,7 @@ $title = "Job List";
 								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-5">
 									<div class="form-group form-lg">
 										<select class="form-control" name="country" required/>
-										<option value="">-Select country-</option>
+										<option value="">-Select Position-</option>
 										 <?php
 										 require 'constants/db_config.php';
 										 try {
