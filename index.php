@@ -87,16 +87,20 @@ include 'constants/check-login.php';
 						<ul class="nav navbar-nav" id="responsive-menu">
 							
 							<li>
-								<a href="job-list.php">Apply Now</a>
+							<a href="job-list.php"><span style="text-transform:capitalize">Apply</span>
+</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">IITP Faculties</a>
+								<a href="employers.php">
+					            <span style="text-transform:uppercase">IITP</span>
+					            <span style="text-transform:capitalize">Faculties</span>
+								</a>
 							</li>
 							
 							<li>
-								<a href="contact.php">Contact Us</a>
+								<a href="contact.php"><span style="text-transform:capitalize">Contact Us</span></a>
 							</li>
 
 						</ul>
@@ -112,8 +116,8 @@ include 'constants/check-login.php';
 							<li><a href="'.$myrole.'">Profile</a></li>';
 						}else{
 						print '
-							<li><a href="login.php">login</a></li>
-							<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
+							<li><a href="login.php"><span style="text-transform:capitalize">Login</span></a></li>
+							<li><a data-toggle="modal" href="#registerModal"><span style="text-transform:capitalize">Register</span></a></li>';						
 						}
 						
 						?>
