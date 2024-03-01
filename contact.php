@@ -52,70 +52,60 @@ include 'constants/check-login.php';
 	<div class="container-wrapper">
 
 		<header id="header">
-			<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
 
-				<div class="container">
-					
-					<div class="logo-wrapper">
-						<div class="logo">
-							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
-						</div>
-					</div>
-					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
-					
-						<ul class="nav navbar-nav" id="responsive-menu">
-						
-							<li>
-							
-								<a href="./">Home</a>
-								
-							</li>
-							
-							<li>
-								<a href="job-list.php">Job List</a>
+<div class="container">
+	
+	<div class="logo-wrapper">
+		<div class="logo">
+			<a href="./"><img width ="50rem" src="images/iitp_logo.png" alt="Logo" /></a>
+		</div>
+	</div>
+	
+	<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+	
+		<ul class="nav navbar-nav" id="responsive-menu">
+			
+			<li>
+				<a href="job-list.php">Apply Now</a>
 
-							</li>
-							
-							<li>
-								<a href="employers.php">Employers</a>
-							</li>
-							
-							<li>
-								<a href="employees.php">Employees</a>
-							</li>
-							
-							<li>
-								<a href="contact.php">Contact Us</a>
-							</li>
+			</li>
+			
+			<li>
+				<a href="employers.php">IITP Faculties</a>
+			</li>
+			
+			<li>
+				<a href="contact.php">Contact Us</a>
+			</li>
 
-						</ul>
-				
-					</div>
+		</ul>
 
-					<div class="nav-mini-wrapper">
-						<ul class="nav-mini sign-in">
-						<?php
-						if ($user_online == true) {
-						print '
-						    <li><a href="logout.php">logout</a></li>
-							<li><a href="'.$myrole.'">Profile</a></li>';
-						}else{
-						print '
-							<li><a href="login.php">login</a></li>
-							<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
-						}
-						
-						?>
+	</div>
 
-						</ul>
-					</div>
-				
-				</div>
-				
-				<div id="slicknav-mobile"></div>
-				
-			</nav>
+	<div class="nav-mini-wrapper">
+		<ul class="nav-mini sign-in">
+		<?php
+		if ($user_online == true) {
+		print '
+			<li><a href="logout.php">logout</a></li>
+			<li><a href="'.$myrole.'">Profile</a></li>';
+		}else{
+		print '
+			<li><a href="login.php">login</a></li>
+			<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
+		}
+		
+		?>
+
+		</ul>
+	</div>
+
+</div>
+
+<div id="slicknav-mobile"></div>
+
+</nav>
 
 			<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
 			
