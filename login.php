@@ -244,18 +244,11 @@ include 'constants/check-login.php';
                                 </div>
 												
                                 </div>
-
-
-						
 					          	<div class="col-sm-12 col-md-12">
 							    <div class="login-box-link-action">
 								<a data-toggle="modal" onclick = "reset_text()" href="#forgotPasswordModal">Forgot password?</a> 
 							    </div>
-						      </div>	
-
-											
-												
-												
+						      </div>																						
 </div>
 
 </div>
@@ -267,7 +260,7 @@ include 'constants/check-login.php';
 </div>
 </form>
 
-							  			<div id="forgotPasswordModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
+				<div id="forgotPasswordModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
 			
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
